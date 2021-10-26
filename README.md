@@ -4,16 +4,16 @@
 ____
 
 ### Токен доступа сообщества
- Для его получения вам необходимо перейти в настройки сообщества в пункт "Settings->API usage", затем нажать кнопку "Create token" и указать нужные права для токена. После получения токена скопируйте его и поместите в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/config.php).
+ Для его получения вам необходимо перейти в настройки сообщества в пункт "Settings->API usage", затем нажать кнопку "Create token" и указать нужные права для токена. После получения токена скопируйте его и поместите в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/blob/main/config.php).
 ____
 
 ### Подтверждение
- После получения токена вам следует перейти во вкладку "Callback API" и скопировать значение в строке "String to be returned", затем соответственно вставить в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/config.php).
+ После получения токена вам следует перейти во вкладку "Callback API" и скопировать значение в строке "String to be returned", затем соответственно вставить в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/blob/main/config.php).
 ____
 
 ### Создание секретного ключа
  После сохранения ключа подтверждения во вкладке "Callback API" найдите пункт "Secret key", туда вам следует ввести придуманный вами ключ и нажать кнопку "Save".
-После его сохранения скопируйте его и вставьте в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/config.php).
+После его сохранения скопируйте его и вставьте в указанное место в файле [config.php](https://github.com/lacartez/php-vk-bot-example/blob/main/config.php).
 ____
 
 ## Сохранение настроек и подключение бота к группе
