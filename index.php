@@ -19,7 +19,8 @@ switch ($data->type) {
 		$from = $data->object->message->from_id;
 
         $cmd = explode(" ", mb_strtolower($data->object->message->text, 'utf-8')); //сразу приводим все сообщения в нижний регистр
-        if (!isset($cmd[0])) { //если вдруг сообщение оказалось пустым, то завершаем скрипт
+        
+	if (!isset($cmd[0])) { //если вдруг сообщение оказалось пустым, то завершаем скрипт
         	exit;
         }
 
