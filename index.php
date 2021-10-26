@@ -19,12 +19,12 @@ switch ($data->type) {
 		$from = $data->object->message->from_id;
 
         $cmd = explode(" ", mb_strtolower($data->object->message->text, 'utf-8')); //сразу приводим все сообщения в нижний регистр
-        if (!isset($cmd[0])) { //если вдруг сообщение оказалось пустым, то завершает скрипт
-        	exit();
+        if (!isset($cmd[0])) { //если вдруг сообщение оказалось пустым, то завершаем скрипт
+        	exit;
         }
 
         switch($cmd[0]) {
-        	case '/hello':
+        	case '/hi', '/hello':
         		exit( say($peer_id, 'Hello World!', $conversation_message_id) );
         	default:
         		exit( say($peer_id, 'Я ещё не знаю такой команды.', $conversation_message_id) );
